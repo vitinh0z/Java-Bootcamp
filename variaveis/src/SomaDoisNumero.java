@@ -6,7 +6,7 @@ import java.util.Scanner;
         
         Scanner scanner = new Scanner (System.in);
 
-        System.out.println("Escolha a operção\n [-] \n [+]");
+        System.out.println("Escolha a operção\n [-] \n [+] ");
 
         String opcao = scanner.next();
 
