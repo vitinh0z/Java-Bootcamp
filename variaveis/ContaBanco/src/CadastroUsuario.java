@@ -36,7 +36,35 @@ public class CadastroUsuario {
                     } else if (opcaoSelecionada == 0) {
                         // Adicione a lógica para "Fazer Cadastro" aqui
                         System.out.println("Iniciando o cadastro...");
-                        break; // Remova o break se deseja que o loop continue após o cadastro
+
+                        try{
+                            Thread.sleep(2000);
+                        } catch (InterruptedException e ) {
+                            e.printStackTrace();
+                        }
+                        System.out.println("DIGITE SEU EMAIL");
+                        String email = scanner.nextLine();
+                        System.out.println("Digite SEU EMAIL NOVAMENTE");
+                        String segundoEmail = scanner.nextLine();
+
+                        if (email.equals(segundoEmail)){
+                        System.out.println("DIGITE UMA SENHA: ");
+                        String senha = scanner.nextLine();
+
+                        System.out.println("Digite sua senha novamente: ");
+                        String segundaSenha = scanner.nextLine();
+
+                        try{
+                            Thread.sleep(5000);
+                        } catch (InterruptedException e ){
+                            e.printStackTrace();
+                        }
+                        System.out.println("Sua conta foi criada ");
+
+                        }
+                        else if (!email.equals(segundoEmail)){
+                            System.out.println("Email não são iguais");
+                        }
                     }
                 }
 
